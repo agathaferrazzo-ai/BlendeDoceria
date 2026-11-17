@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlendêBot - Blendê Doceria</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+    <header>
+        <h1>BlendêBot</h1>
+        <p>Seu assistente virtual da Blendê Doceria!</p>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="chat.html">BlendêBot</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chat-container">
+
+            <div class="chat-header">
+                <h2>Converse com o BlendêBot 🍰</h2>
+                <p>Estamos aqui para ajudar!</p>
+            </div>
+
+            <div id="mensagens" class="mensagens">
+                <div class="mensagem bot">
+                    Olá! Seja bem-vindo à Blendê Doceria!
+                    💗 Como posso ajudar você hoje?
+                </div>
+            </div>
+
+            <div class="sugestoes">
+                <button onclick="enviarSugestao('Quem é a Blendê Doceria?')">
+                    Sobre a empresa
+                </button>
+
+                <button onclick="enviarSugestao('Quais produtos vocês oferecem?')">
+                    Produtos
+                </button>
+
+                <button onclick="enviarSugestao('Qual é a missão da empresa?')">
+                    Nossa missão
+                </button>
+
+                <button onclick="enviarSugestao('Quais são os valores da empresa?')">
+                    Nossos valores
+                </button>
+            </div>
+
+            <div class="entrada">
+                <input
+                    type="text"
+                    id="mensagem"
+                    placeholder="Digite sua mensagem..."
+                    autocomplete="off"
+                >
+
+                <button onclick="enviarMensagem()">Enviar</button>
+            </div>
+
+        </section>
+
+        <a href="index.html" class="voltar">Voltar para o início</a>
+    </main>
+
+    <footer>
+        <p>© 2026 Blendê Doceria - Todos os direitos reservados.</p>
+        <p>Desenvolvido por Agatha | agatha.ferrazzo@edu.senai.br</p>
+    </footer>
+
+    <script src="chat.js"></script>
+</body>
+</html>
